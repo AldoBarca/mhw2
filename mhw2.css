@@ -239,10 +239,15 @@ footer {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
     flex-direction: row;
     margin-bottom: 2%;
     padding-top: 5%;
+    margin-left: 4%;
+}
+
+.flexbox .visita {
+    margin-right: 7%;
 }
 
 .preferiti {
@@ -293,6 +298,11 @@ footer {
     width: 15%;
     height: 50%;
     padding-top: 3%;
+}
+
+.checked,
+.unchecked {
+    cursor: pointer;
 }
 
 .griglia h1 {
