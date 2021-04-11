@@ -1,8 +1,6 @@
 let i = 0;
 const preferiti = document.querySelector('#ScrittaPreferiti');
-
 //funzioni per aggiunta e rimozione tra i preferiti, ap sta per add preferiti e rp per remove preferiti
-
 function ap1() {
     preferiti.classList.remove('hidden');
     const p = document.querySelector('#p1');
@@ -21,9 +19,6 @@ function rp1() {
     c1.removeEventListener('click', rp1);
     p1.addEventListener('click', ap1);
     if (i == 0) { preferiti.classList.add('hidden'); }
-
-
-
 }
 
 const p1 = document.querySelector('#u1');
@@ -487,6 +482,9 @@ d17.addEventListener('click', ad17);
 const d18 = document.querySelector('#d9 .c');
 d18.addEventListener('click', ad18);
 
+// parte atta a far funzionare la barra di ricerca e all'implementazione delle relative funzioni
+const input = document.getElementById('ricerca');
+input.addEventListener('keyup', ricerca);
 
 function ricerca(event) {
     let scritta = input.value;
@@ -574,8 +572,7 @@ function ricerca(event) {
 
 }
 
-const input = document.getElementById('ricerca');
-input.addEventListener('keyup', ricerca);
+
 
 
 
